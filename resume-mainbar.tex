@@ -1,0 +1,98 @@
+\documentclass[10pt,a4paper,ragged2e]{altacv}
+
+% Change the page layout
+\geometry{left=2cm,right=10cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm}
+
+% Change the font
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Carlito}
+\else
+  % If using pdflatex:
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[default]{lato}
+\fi
+
+% Change the colours
+\definecolor{VividPurple}{HTML}{000000}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{2E2E2E}
+\colorlet{heading}{VividPurple}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Carter Nesbitt}
+\tagline{Computer Engineering}
+\personalinfo{
+   \email{ccnesbitt@gmail.com}
+   \phone{518-307-4096}
+%  \mailaddress{Address, Street, 00000 County}
+   \location{Rochester Institute of Technology}
+%  \homepage{}
+%  \twitter{}
+%  \linkedin{linkedin.com/in/carter-nesbitt-343541165}
+   \github{github.com/cjn9414}
+}
+
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+\AtBeginEnvironment{itemize}{\small}
+
+\cvsection[resume-sidebar]{Education}
+\cvevent{Bachelor's of Science - GPA: 3.99}{Rochester Institute of Technology}{Graduating June 2022}{}
+
+\cvsection{Experience}
+
+\cvevent{Firmware Engineering Intern}{Positive Science}{Feb 2019 -- Aug 2019}{Rochester, NY}
+\begin{itemize}
+\item Research, development and integration of various sensors and components onto an embedded system.
+\smallskip
+\item Worked on a small team to diagnose and resolve issues in both software and hardware that cause device failures.
+\smallskip
+\item Leading firmware development, device diagnostics and research of system during internship.
+\smallskip
+\item Experience with internal and wireless communications, operating systems, and constraints associated with embedded systems.
+\end{itemize}
+
+\divider
+
+\cvevent{Orientation Programming Assistant}{Rochester Institute of Technology}{Mar 2019 -- Aug 2019}{Rochester, NY}
+\begin{itemize}
+\item Organized and maintained a welcoming campus for new students arriving at RIT.
+\smallskip
+\item Setup and supervised many events that took place during RIT's orientation week.
+\item Collaborated with a close team to maintain a reputable New Student Orientation program at RIT.
+\end{itemize}
+
+\divider
+
+\cvevent{Orientation Leader}{Rochester Institute of Technology}{August 2018}{Rochester, NY}
+\begin{itemize}
+\item Provided guidance to a group of new students during their first weeks at university.
+\smallskip
+\item Gave advice with respect to college life and critical habits to new students to aid in their personal development at RIT.
+\item Functioned as part of the public view of RIT under the New Student Orientation program.
+\end{itemize}
+
+\cvsection{Achievements}
+\smallskip
+\begin{itemize}
+\item Maintained Dean's List at RIT every semester, beginning Fall 2017.
+\item Computer Engineering Department GPA of 4.0
+\end{itemize}
+
+\clearpage
+
+\nocite{*}
+
+\end{document}
